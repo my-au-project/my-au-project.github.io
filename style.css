@@ -41,13 +41,27 @@ header p {
   color: var(--muted);
 }
 
+.subtitle {
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.note {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* ---------- PAGE LAYOUT ---------- */
 .layout {
   max-width: 1200px;
   margin: 2rem auto 4rem;
   padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 600px 1fr;
   gap: 2rem;
 }
 
@@ -67,6 +81,33 @@ header p {
 
 .sidebar h2 {
   margin-top: 0;
+}
+
+.about-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.about-text.truncated {
+  max-height: 14em; /* ~1000 characters depending on font */
+}
+
+.read-more-btn {
+  margin-top: 0.8rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
 }
 
 /* ---------- TIMELINE CONTROLS ---------- */
@@ -130,7 +171,7 @@ header p {
 /* ---------- TIMELINE ITEM ---------- */
 .timeline-item {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   padding: 1.5rem 0 1.5rem 1.2rem;
 }
 
@@ -287,7 +328,7 @@ main {
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .layout {
     grid-template-columns: 1fr;
   }
