@@ -138,26 +138,7 @@ header p {
   border-radius: 18px;
   padding: 1.5rem;
 }
-.photo-slider {
-  margin: 2rem 0;
-  overflow-x: auto;
-}
 
-.photo-slider .slides {
-  display: flex;
-  gap: 1rem;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.photo-slider img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-}
 .sidebar h2 {
   margin-top: 0;
 }
