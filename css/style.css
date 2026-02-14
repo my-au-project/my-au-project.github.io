@@ -354,6 +354,15 @@ main {
   margin-bottom: 0.5rem;
 }
 
+
+/* ---------- PHOTOS ---------- */
+ .carousel-inner > .carousel-item {
+   overflow:hidden
+}
+ .carousel-inner > .carousel-item img{
+  object-fit: cover;
+}
+
 /* ---------- KEY TAKEAWAYS ---------- */
 .key-takeaways {
   background: #eef3ef;
@@ -416,9 +425,16 @@ main {
     margin-left: 225px;
   }
 
+  .section-cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .card {
     max-width: 75%;
   }
+ .carousel-inner > .carousel-item {
+   height:500px;
+}
 
 }
 
@@ -445,4 +461,7 @@ main {
   .card {
     max-width: 100%;
   }
+ .carousel-inner > .carousel-item {
+   height:150px;
+}
 }
