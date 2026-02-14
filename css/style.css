@@ -432,6 +432,27 @@ main {
   .card {
     max-width: 75%;
   }
+
+  .disclamer {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cfooter {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .cnav-bar {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
  .carousel-inner > .carousel-item {
    height:500px;
 }
@@ -461,6 +482,23 @@ main {
   .card {
     max-width: 100%;
   }
+
+  .disclamer {
+    max-width: 100%;
+    max-width: 100%;
+  }
+
+  .cfooter {
+    max-width: 100%;
+    max-width: 100%;
+
+  }
+
+  .cnav-bar {
+    max-width: 100%;
+
+  }
+
  .carousel-inner > .carousel-item {
    height:150px;
 }
